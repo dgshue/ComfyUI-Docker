@@ -40,23 +40,19 @@ RUN apt-get update; \
         libavformat-dev \
         libswscale-dev \
         libswresample-dev \
-        # libtbb2 \
         libssl-dev \
         libva-dev \
         libmfx-dev \
         libgstreamer1.0-dev \
-        libgstreamer-plugins-base1.0-dev && \
+        libgstreamer-plugins-base1.0-dev
         fish \
         fd-find \
         vim \
         less \
         aria2 \
-        git \
-        ninja-build \
         make \
         python3-pybind11 \
-        libgl1 \
-    rm -rf /var/lib/apt/lists/*
+        libgl1
 
 ENV VIRTUAL_ENV=/opt/venv
 RUN python3 -m venv $VIRTUAL_ENV
