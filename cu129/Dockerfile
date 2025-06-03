@@ -44,7 +44,7 @@ RUN apt-get update; \
         libva-dev \
         libmfx-dev \
         libgstreamer1.0-dev \
-        libgstreamer-plugins-base1.0-dev
+        libgstreamer-plugins-base1.0-dev \
         fish \
         fd-find \
         vim \
